@@ -23,3 +23,4 @@ logs/
 
 # Vercel
 .vercel/
+.vercel

@@ -1,6 +1,6 @@
-# Personal Hike Reviews — Moab & Surrounding Area
+# Personal Hike Log — Trails I Have Done
 
-These are firsthand reviews of trails personally completed in and around Moab, Utah.
+This is a personal hiking journal. These are trails the user has personally hiked and completed firsthand in and around Moab, Utah. Hikes done: Slickrock, Corona Arch, Delicate Arch, Wild Horse Slot Canyon.
 
 ---
 

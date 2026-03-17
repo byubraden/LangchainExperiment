@@ -28,7 +28,7 @@ export async function initKnowledgeBase() {
 export const knowledgeBaseTool = tool(
   async ({ query }) => {
     if (!vectorStore) throw new Error("Knowledge base not initialized");
-    const results = await vectorStore.similaritySearch(query, 3);
+    const results = await vectorStore.similaritySearch(query, 5);
     return results
       .map((r) => `[Source: ${r.metadata.source}]\n${r.pageContent}`)
       .join("\n\n---\n\n");

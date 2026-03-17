@@ -1,0 +1,19 @@
+{
+  "name": "adventure-agent",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@langchain/anthropic": "^1.3.22",
+    "@langchain/classic": "^1.0.23",
+    "@langchain/community": "^1.1.0",
+    "@langchain/core": "^1.1.0",
+    "@langchain/langgraph": "^1.0.0",
+    "@langchain/tavily": "^1.0.0",
+    "dotenv": "^16.4.0",
+    "express": "^4.19.0",
+    "langchain": "^1.2.30",
+    "pino": "^9.0.0",
+    "zod": "^3.23.0"
+  }
+}
