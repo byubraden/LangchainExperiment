@@ -4,12 +4,15 @@ import { tool } from "@langchain/core/tools";
 import { z } from "zod";
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 let vectorStore = null;
 let rawDocs = [];
 
 export async function initKnowledgeBase() {
-  const knowledgeDir = path.join(process.cwd(), "knowledge");
+  const knowledgeDir = path.join(__dirname, "../../knowledge");
   const embeddingsFile = path.join(knowledgeDir, "embeddings.json");
 
   if (fs.existsSync(embeddingsFile)) {
