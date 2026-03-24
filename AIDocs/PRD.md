@@ -52,8 +52,8 @@ Express API Server (server/)
 - Tool schemas: `zod`
 
 ### LLM
-- Provider: Google Gemini (`gemini-2.0-flash`) — free tier
-- SDK: `@langchain/google-genai` `ChatGoogleGenerativeAI`
+- Provider: Anthropic Claude (`claude-haiku-4-5-20251001`)
+- SDK: `@langchain/anthropic` `ChatAnthropic`
 
 ### Embeddings
 - Provider: Voyage AI (`voyage-3-lite` model)
@@ -67,13 +67,14 @@ Express API Server (server/)
 - `MemoryVectorStore` from `@langchain/classic/vectorstores/memory` (in-memory, no external DB)
 - Retrieval chains from `@langchain/classic/chains/retrieval`
 
-### Knowledge Base Documents (≥5 required)
+### Knowledge Base Documents (7 total)
 1. `hiking-essentials.md` — The 10 essentials, trail prep, navigation
 2. `climbing-safety.md` — Rope systems, anchors, fall factors, communication
 3. `survival-basics.md` — Shelter, fire, water purification, signaling
 4. `gear-guide.md` — Layering systems, pack weight, materials comparison
-5. `nutrition-and-hydration.md` — Calorie needs, electrolytes, water sourcing
+5. `nutrition-hydration.md` — Calorie needs, electrolytes, water sourcing
 6. `leave-no-trace.md` — LNT principles, campsite selection, waste disposal
+7. `personal-hikes.md` — User's firsthand hike reviews (Moab/Colorado Plateau)
 
 ---
 
@@ -81,7 +82,7 @@ Express API Server (server/)
 
 | Key | Purpose | Where to Get |
 |-----|---------|--------------|
-| `GOOGLE_API_KEY` | Gemini LLM | aistudio.google.com (free) |
+| `ANTHROPIC_API_KEY` | Claude LLM | console.anthropic.com |
 | `VOYAGE_API_KEY` | Embeddings | dash.voyageai.com (free tier) |
 | `TAVILY_API_KEY` | Web search | app.tavily.com (free tier) |
 
